@@ -5,6 +5,15 @@
   <title>미션 1-6 :: &ldquo;숙박 예약 정보&rdquo; 마크업</title>
  </head>
  <body>
+ <!--
+	<sup> - 윗첨자
+	<sub> - 아랫첨자
+	mark - 관련 참조 목적의 하이라이트된 글자요서
+	addr - 축약요소
+	time - 기계가 이해할 수 있는 형태로 날짜나 시간을 나타내는 요소
+	s - 더이상 관련이 없거나 정확하지 않은 요소
+	dfn - 정의
+ -->
  	<section>
  		<h1>&ldquo;숙박 예약 정보&rdquo; 마크업</h1>
  		<article>
@@ -26,21 +35,21 @@
 	 					<span>star04</span>
 	 					<span>star05</span>
 	 				</span>
-	 				<span>후기 : <em>1726</em>개</span>
+	 				<span>후기 : <data value="1726">1726</data>개</span>
  				</div>
  				<ul>
  					<li>
  						<span>대실</span>
  						<span>최대 4시간</span>
  						<span>회원가</span>
- 						<span>35,000</span>
+ 						<s>35,000</s>
  						<strong><em>30,000</em>원</strong>
  					</li>
  					<li>
  						<span>숙박</span>
- 						<span>21:00 ~</span>
+ 						<span><time datetime="T21:00">21:00 ~</time></span>
  						<span>예약가</span>
- 						<span>70,000</span>
+ 						<s>70,000</s>
  						<strong><em>55,000</em>원</strong>
  					</li>
  				</ul>
